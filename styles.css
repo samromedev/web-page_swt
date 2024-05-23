@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #d92d47;
+    --secondary-color: #0087da;
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+/*Encabezado y seccion de menu*/
+
+header {
+    width: 100%;
+    height: 8rem;
+    background-color: var(--primary-color);
+    nav {
+        display: flex;
+        flex: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        .logo-container {
+            width: fit-content;
+            height: 70%;
+            margin: auto 0;
+        }
+        .list-container {
+            width: 45%;
+            height: 90%;
+            .list_menu {
+                display: inline-flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100%;
+                list-style-type: none;
+                > li {
+                    color: white;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
